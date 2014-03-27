@@ -1,1 +1,86 @@
 <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>weftradio.github.io</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing:border-box;
+          -moz-box-sizing:border-box;
+               box-sizing:border-box;
+      }
+      html {
+        font-size: 16px;
+      }
+      @media (min-width: 48em) {
+        html {
+          font-size: 20px;
+        }
+      }
+      body {
+        font: 1rem/1.5 "Helvetica Neue", sans-serif;
+        color: #fff;
+        background-color: #555;
+      }
+      .container {
+        max-width: 54rem;
+        padding: 0 1rem;
+        margin: 0 auto;
+      }
+      /*!
+       * table-grid (http://mdo.github.io/table-grid)
+       * Released under MIT, (c) 2014 Mark Otto
+       */
+      /*
+       * The Grid
+       */
+      @media (min-width: 600px) {
+        /* Add `.grid` for the table */
+        .grid {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+        }
+        /* Add `.col` for the table cells, or columns */
+        .col {
+          display: table-cell;
+        }
+        /* Padded columns */
+        .grid-padded {
+          margin-left:  -1rem;
+          margin-right: -1rem;
+        }
+        .grid-padded .grid {
+          border-spacing: 1rem 0;
+        }
+      }
+      /*
+       * Vertically center grid content
+       *
+       * Requires content within the column to be inline or inline-block.
+       */
+      .grid-align-middle .col {
+        vertical-align: middle;
+      }
+      img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-padded">
+        <div class="grid">
+          <div class="col">
+            <h1>logo goes here</h1>
+          </div>
+          <div class="col">
+            <h1>WEFT 90.1 fm</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
