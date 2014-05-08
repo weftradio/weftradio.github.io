@@ -1,118 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <title>weftradio.github.io</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        -webkit-box-sizing:border-box;
-          -moz-box-sizing:border-box;
-               box-sizing:border-box;
-      }
-      html {
-        font-size: 16px;
-      }
-      @media (min-width: 48em) {
-        html {
-          font-size: 20px;
-        }
-      }
-      body {
-        font: 1rem/1.5 "Helvetica Neue", sans-serif;
-        color: #fff;
-        background-color: #555;
-      }
-      html, body {
-        height: 100%;
-      }
-      .container {
-        max-width: 54rem;
-        padding: 0 1rem;
-        margin: 0 auto;
-      }
-      body, .container, .grid, .grid-padded, .grid-padded .grid,  .grid-align-middle {
-        height: 100%;
-      }
-      /*!
-       * table-grid (http://mdo.github.io/table-grid)
-       * Released under MIT, (c) 2014 Mark Otto
-       */
-      /*
-       * The Grid
-       */
-      @media (min-width: 600px) {
-        /* Add `.grid` for the table */
-        .grid {
-          display: table;
-          width: 100%;
-          table-layout: fixed;
-        }
-        /* Add `.col` for the table cells, or columns */
-        .col {
-          display: table-cell;
-        }
-        /* Padded columns */
-        .grid-padded {
-          margin-left:  -1rem;
-          margin-right: -1rem;
-        }
-        .grid-padded .grid {
-          border-spacing: 1rem 0;
-        }
-      }
-      /*
-       * Vertically center grid content
-       *
-       * Requires content within the column to be inline or inline-block.
-       */
-      .grid-align-middle .col {
-        vertical-align: middle;
-      }
-      img {
-        max-width: 100%;
-      }
-      h1 {
-        font-size: 6em;
-        color: #08c;
-        text-align: center;
-        font-family: "Bree Serif";
-        text-shadow: rgb(11, 78, 65) 1px 1px,
-        rgb(11, 78, 65) 2px 2px,
-        rgb(11, 78, 65) 3px 3px,
-        rgb(11, 78, 65) 4px 4px,
-        rgb(11, 78, 65) 5px 5px,
-        rgb(11, 78, 65) 6px 6px,
-        rgb(11, 78, 65) 7px 7px,
-        rgb(11, 78, 65) 8px 8px,
-        rgb(11, 78, 65) 9px 9px,
-        rgb(11, 78, 65) 10px 10px,
-        rgb(11, 78, 65) 11px 11px,
-        rgb(11, 78, 65) 12px 12px,
-        rgb(11, 78, 65) 13px 13px,
-        rgb(11, 78, 65) 14px 14px,
-        rgb(11, 78, 65) 15px 15px,
-        rgb(11, 78, 65) 16px 16px,
-        rgb(11, 78, 65) 17px 17px,
-        rgb(11, 78, 65) 18px 18px,
-        rgb(11, 78, 65) 19px 19px,
-        rgb(11, 78, 65) 20px 20px;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="grid-padded">
-        <div class="grid grid-align-middle">
-          <div class="col">
-            <img src="http://i1.ytimg.com/vi/dV09EdxZ_JU/maxresdefault.jpg">
-          </div>
-          <div class="col">
-            <h1>WEFT 90.1 fm</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
