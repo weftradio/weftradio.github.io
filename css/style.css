@@ -1445,3 +1445,23 @@ ul.support-gift-list {
     margin: 0 auto;
     display: block;
 }
+
+.title {
+    margin-top: 0;
+    font-size: 1.9em;
+}
+
+.aside {
+    border: 4px solid #08c;
+    padding: .5em;
+    padding-top: 0;
+}
+
+.aside-title {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.aside-text {
+    font-size: 1em;
+}
