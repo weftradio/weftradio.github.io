@@ -171,6 +171,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/support\/index-during-spring-pledge-drive.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/support\/index-during-spring-pledge-drive.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/support\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -188,7 +197,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "_site",
+	"displayValue": "weftradio.github.io",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_brown"
 	},
@@ -927,7 +936,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/_site"
 	},
 "settingsFileVersion": "2"
 }

@@ -1362,6 +1362,7 @@ ul.support-gift-list {
 .icon-lead {
     margin-top: 2em;
     margin-bottom: -.1em;
+    line-height: 1.5;
 }
 
 .support-icon-container {
@@ -1471,7 +1472,6 @@ ul.support-gift-list {
 }
 
 .aside-title {
-    font-family: "Helvetica Neue", "Helvetica", sans-serif;
     text-align: center;
     font-size: 1.3em;
     font-weight: 300;
