@@ -9,3 +9,4 @@ url: "http://weftradio.github.io"
 # Build settings
 markdown: kramdown
 permalinks: pretty
+exclude: [notes.md,README.md,about.md,config.codekit,sass,]

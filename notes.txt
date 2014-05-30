@@ -1,0 +1,32 @@
+NOTES
+=====
+
+- have to get Pure.css out, implement something aligned with the latest via @mdo
+- take <article> elements out, I've realized their meaning more and don't want them in.
+- implement a component-architecture via user interface elements with corresponding html & css includes; styleguide-as-you-go with these includes.
+    __APPROACH__
+    - go to each page and list the UI elements - these list items become the component style sheets & markup.
+    - this begins to expand the workload, which is the way that Lorri & I can begin working on it together.
+    - the underlying thought is about including only the required component styles on a per-page basis. THIS CUTS DOWN ON UNUSED CSS.
+    - This means that we need __TO GENERATE & CALL A UNIQUE STYLE SHEET PER PAGE__ **how to execute this?!**
+    - This approach is not OBJECT ORIENTED, but rather PAGE ORIENTED. 
+    
+##Components
+    Global
+        - Header nav bar
+        - Header logo & sub title
+        - Page main title or phrase (found at: listen, support, )
+        - Page sub title or phrase (found at: listen, support, )
+        - Footer
+
+    Listen
+        - listen button - TuneIn
+        - listen button - VLC Player
+        - listen button - Winamp
+        - listen button - iTunes
+        - listen button - Quicktime
+        - listen button - WMP
+        - listen button - RealPlayer
+
+    Support
+        - 
