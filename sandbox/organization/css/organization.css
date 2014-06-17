@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* Reset
+================================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Scaffolding and type
+================================================== */
+html {
+  font-size: 16px;
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.5 "Open Sans", sans-serif;
+  color: #5a5a5a;
+}
+
+/* Grid
+================================================== */
+/*  SimpleGrid - a fork of CSSGrid by Crowd Favorite (https://github.com/crowdfavorite/css-grid)
+ *  http://simplegrid.info
+ *  by Conor Muirhead (http://conor.cc) of Early LLC (http://earlymade.com) 
+ *  License: http://creativecommons.org/licenses/MIT/
+ */
+
+ /* @bzelip note: I replaced all of SimpleGrid's use of "slot" with "col" */
+
+/*
+ * Simple-Grid from 0
+ ********************
+ */
+.grid {
+  padding: 0 20px;
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+/*
+ * Simple-Grid from 720
+ **********************
+ */
+@media (min-width: 720px) {
+  /* Containers */
+  .grid{ margin:0 auto; padding: 0 10px; width:700px; }
+  .row{ clear:left; }
+
+  /* Cols Setup */
+  .col-0,.col-1,.col-2,.col-3,.col-4,.col-5,.col-0-1,.col-0-1-2,.col-0-1-2-3,.col-0-1-2-3-4,.col-0-1-2-3-4-5,.col-1-2,.col-1-2-3,.col-1-2-3-4,.col-1-2-3-4-5,.col-2-3,.col-2-3-4,.col-2-3-4-5,.col-3-4,.col-3-4-5,.col-4-5,.col-6,.col-7,.col-8,.col-9,.col-6-7,.col-6-7-8,.col-6-7-8-9,.col-7-8,.col-7-8-9,.col-8-9{ display:inline; float:left; margin-left:20px; }
+
+  /* 6-Col Grid Sizes */
+  .col-0,.col-1,.col-2,.col-3,.col-4,.col-5{ width:100px; } /* Sixths */
+  .col-0-1,.col-1-2,.col-2-3,.col-3-4,.col-4-5{ width:220px; } /* Thirds */
+  .col-0-1-2-3,.col-1-2-3-4,.col-2-3-4-5{ width:460px; } /* Two-Thirds */
+  .col-0-1-2-3-4,.col-1-2-3-4-5{ width:580px; } /* Five-Sixths */
+
+  /* 4-Col Grid Sizes */
+  .col-6,.col-7,.col-8,.col-9{ width:160px; } /* Quarters */
+  .col-6-7-8,.col-7-8-9{ width:520px; } /* Three-Quarters */
+
+  /* 6-Col/4-Col Shared Grid Sizes */
+  .col-0-1-2,.col-1-2-3,.col-2-3-4,.col-3-4-5, .col-6-7,.col-7-8,.col-8-9{ width:340px; } /* Halves */
+  .col-0-1-2-3-4-5, .col-6-7-8-9{ width: 100%; } /* Full-Width */
+
+  /* Zeroing Out Leftmost col Margins */
+  .col-0,.col-0-1,.col-0-1-2,.col-0-1-2-3,.col-0-1-2-3-4,.col-0-1-2-3-4-5,.col-6,.col-6-7,.col-6-7-8,.col-6-7-8-9,.col-1 .col-1,.col-1-2 .col-1,.col-1-2 .col-1-2,.col-1-2-3 .col-1,.col-1-2-3 .col-1-2,.col-1-2-3 .col-1-2-3,.col-1-2-3-4 .col-1,.col-1-2-3-4 .col-1-2,.col-1-2-3-4 .col-1-2-3,.col-1-2-3-4 .col-1-2-3-4,.col-1-2-3-4-5 .col-1,.col-1-2-3-4-5 .col-1-2,.col-1-2-3-4-5 .col-1-2-3,.col-1-2-3-4-5 .col-1-2-3-4,.col-1-2-3-4-5 .col-1-2-3-4-5,.col-2 .col-2,.col-2-3 .col-2,.col-2-3 .col-2-3,.col-2-3-4 .col-2,.col-2-3-4 .col-2-3,.col-2-3-4 .col-2-3-4,.col-2-3-4-5 .col-2,.col-2-3-4-5 .col-2-3,.col-2-3-4-5 .col-2-3-4,.col-2-3-4-5 .col-2-3-4-5,.col-3 .col-3,.col-3-4 .col-3,.col-3-4 .col-3-4,.col-3-4-5 .col-3,.col-3-4-5 .col-3-4,.col-3-4-5 .col-3-4-5,.col-4 .col-4,.col-4-5 .col-4,.col-4-5 .col-4-5,.col-5 .col-5,.col-7 .col-7,.col-7-8 .col-7,.col-7-8 .col-7-8,.col-7-8-9 .col-7,.col-7-8-9 .col-7-8,.col-7-8-9 .col-7-8-9,.col-8 .col-8,.col-8-9 .col-8,.col-8-9 .col-8-9{ margin-left:0 !important; } /* Important is to avoid repeating this in larger screen css files */
+
+  /* Row Clearfix */
+  .row:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
+  .row{ zoom:1; }
+}
+
+/*
+ * Simple-Grid from 985
+ **********************
+ */
+@media (min-width: 985px) {
+  /* Containers */
+  .grid{ width:966px; }
+
+  /* Cols Setup */
+  .col-0,.col-1,.col-2,.col-3,.col-4,.col-5,.col-0-1,.col-0-1-2,.col-0-1-2-3,.col-0-1-2-3-4,.col-0-1-2-3-4-5,.col-1-2,.col-1-2-3,.col-1-2-3-4,.col-1-2-3-4-5,.col-2-3,.col-2-3-4,.col-2-3-4-5,.col-3-4,.col-3-4-5,.col-4-5,.col-6,.col-7,.col-8,.col-9,.col-6-7,.col-6-7-8,.col-6-7-8-9,.col-7-8,.col-7-8-9,.col-8-9{ display:inline; float:left; margin-left:30px; }
+
+  /* 6-Col Grid Sizes */
+  .col-0,.col-1,.col-2,.col-3,.col-4,.col-5{ width:136px; } /* Sixths */
+  .col-0-1,.col-1-2,.col-2-3,.col-3-4,.col-4-5{ width:302px; } /* Thirds */
+  .col-0-1-2-3,.col-1-2-3-4,.col-2-3-4-5{ width:634px; } /* Two-Thirds */
+  .col-0-1-2-3-4,.col-1-2-3-4-5{ width:800px; } /* Five-Sixths */
+
+  /* 4-Col Grid Sizes */
+  .col-6,.col-7,.col-8,.col-9{ width:219px; } /* Quarters */
+  .col-6-7-8,.col-7-8-9{ width:717px; } /* Three-Quarters */
+
+  /* 6-Col/4-Col Shared Grid Sizes */
+  .col-0-1-2,.col-1-2-3,.col-2-3-4,.col-3-4-5, .col-6-7,.col-7-8,.col-8-9{ width:468px; } /* Halves */
+}
+
+/*
+ * Simple-Grid from 1236
+ ***********************
+ */
+@media (min-width: 1236px) {
+  /* Containers */
+  .grid{ width:1206px; }
+
+  /* 6-Col Grid Sizes */
+  .col-0,.col-1,.col-2,.col-3,.col-4,.col-5{ width:176px; } /* Sixths */
+  .col-0-1,.col-1-2,.col-2-3,.col-3-4,.col-4-5{ width:382px; } /* Thirds */
+  .col-0-1-2-3,.col-1-2-3-4,.col-2-3-4-5{ width:794px; } /* Two-Thirds */
+  .col-0-1-2-3-4,.col-1-2-3-4-5{ width:1000px; } /* Five-Sixths */
+
+  /* 4-Col Grid Sizes */
+  .col-6,.col-7,.col-8,.col-9{ width:279px; } /* Quarters */
+  .col-6-7-8,.col-7-8-9{ width:897px; } /* Three-Quarters */
+
+  /* 6-Col/4-Col Shared Grid Sizes */
+  .col-0-1-2,.col-1-2-3,.col-2-3-4,.col-3-4-5, .col-6-7,.col-7-8,.col-8-9{ width:588px; } /* Halves */ 
+}
+
