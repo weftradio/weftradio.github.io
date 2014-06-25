@@ -1479,3 +1479,36 @@ ul.support-gift-list {
 .aside-text {
     font-size: 1em;
 }
+
+.spinitron-feed {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px dotted #08c;
+}
+
+@media (max-width:767px) {
+    .spinitron-feed {
+        margin-right: 0;
+    }
+}
+
+.spinitron-feed a {
+    color: #08c;
+    text-decoration: none;
+}
+
+#spinitron-nowplaying .songpart:before {
+  content: "\21E2";
+}
+
+#spinitron-nowplaying .labelpart,
+ #spinitron-nowplaying .datepart {
+    display: none;
+}
+
+#spinitron-nowplaying img {
+    margin: 0;
+    display: inline;
+    vertical-align: -3px;
+}

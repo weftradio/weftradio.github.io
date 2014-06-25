@@ -30,8 +30,10 @@ aside {
   border: 5px solid #000;
 }
 
-#spinitron-nowplaying .spunpart,
-#spinitron-nowplaying .diskpart,
-#spinitron-nowplaying .labelpart {
+#spinitron-nowplaying .spunpart {
   display: none;
+}
+
+#spinitron-nowplaying .labelpart:before {
+  content: "on "
 }
