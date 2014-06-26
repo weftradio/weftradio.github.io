@@ -1498,6 +1498,10 @@ ul.support-gift-list {
     text-decoration: none;
 }
 
+.spinitron-feed a:hover {
+    color: #2d3443;
+}
+
 #spinitron-nowplaying .songpart:before {
   content: "\21E2";/* see http://unicode-table.com/en/ for Unicode references */
 }
@@ -1511,4 +1515,12 @@ ul.support-gift-list {
     margin: 0;
     display: inline;
     vertical-align: -3px;
+}
+
+#spinitron-nowplaying p {
+    padding: .5rem;
+}
+
+#spinitron-nowplaying p:nth-child(odd) {
+  background-color: rgba(45,52,67,.1);
 }
