@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/*
+ * Fonts
+ */
+
+/*  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Scaffolding and type
+ */
+
+html {
+  font-size: 16px;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.5 "Bree Serif", serif;
+  background-color: #ccc;
+  color: #2d3443;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #08c;
+	text-decoration: none;
+}
+
+a:hover {color: #2d3443;}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+/*
+ * Sections
+ */
+
+.container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+@media (min-width: 48em) {
+	.container {
+		max-width: 1020px;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* Header - Top Menu */
+nav {
+	position: relative;
+	top: 0;
+	background-color: #191919;
+}
+@media (min-width: 48em) {
+	nav {
+		top: 1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+	}
+}
+
+#top-menu {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-position: outside;
+	text-align: center;
+}
+
+#top-menu li {
+	display: inline-block;
+}
+
+#top-menu li a {
+	display: block;
+	padding: .5rem .75rem;
+	color: white;
+	text-decoration: none;
+}
+
+#top-menu li a:hover {
+	background-color: white;
+	color: #2d3443;
+}
+
+/* Header - Logo */
+.main-title {
+  font-size: 6rem;
+  color: #08c;
+  text-align: center;
+  font-family: "Bree Serif";  
+  text-shadow: rgb(11, 78, 65) 1px 1px,
+    rgb(11, 78, 65) 2px 2px,
+    rgb(11, 78, 65) 3px 3px,
+    rgb(11, 78, 65) 4px 4px,
+    rgb(11, 78, 65) 5px 5px,
+    rgb(11, 78, 65) 6px 6px,
+    rgb(11, 78, 65) 7px 7px,
+    rgb(11, 78, 65) 8px 8px,
+    rgb(11, 78, 65) 9px 9px,
+    rgb(11, 78, 65) 10px 10px,
+    rgb(11, 78, 65) 11px 11px,
+    rgb(11, 78, 65) 12px 12px,
+    rgb(11, 78, 65) 13px 13px,
+    rgb(11, 78, 65) 14px 14px,
+    rgb(11, 78, 65) 15px 15px,
+    rgb(11, 78, 65) 16px 16px,
+    rgb(11, 78, 65) 17px 17px,
+    rgb(11, 78, 65) 18px 18px,
+    rgb(11, 78, 65) 19px 19px,
+    rgb(11, 78, 65) 20px 20px;
+  margin: -1rem 0 0 0;
+}
+
+.main-sub-title {
+	margin: 0;
+	text-align: center;
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+	font-weight: 100;
+}
+
+/* Home Page News */
+.news article {
+	margin-bottom: 2rem;
+}
+
+.news article:last-child {
+	margin-bottom: 0;
+}
+
+.news article h1 {
+	margin: 0 0 .75rem 0;
+	font-size: 1.5rem;
+}
+
+.news figure {
+	margin: 0;
+}
+
+.news figure img {
+	float: left;
+	padding-right: 1rem;
+}
+
+/* Home Page Spinitron Feed */
+.spinitron-feed {
+	margin-top: 1rem;
+	padding: 1rem;
+	border: 1px dotted #08c;
+}
+
+.spinitron-feed h1 {
+	margin: 0 0 .75rem 0;
+	font-size: 1.5rem;
+}
+
+/* Home Page Events */
+.events {
+	padding: .5rem;
+	border: 4px solid #08c;
+}
+
+.events h1 {
+	margin: 0 0 1rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.events article h1,
+.events article h2 {
+	font-size: 1rem;
+	text-align: left;
+	margin: 0 0 .3rem 0;
+}
+
+.events article h2 {
+	font-weight: normal;
+}
+
+.events article p {
+	font-size: .8rem;
+	font-style: italic;
+}
+
+/* Home Page Spinitron Feed */
+#spinitron-nowplaying .songpart:before {
+	content: "\21E2";/* see http://unicode-table.com/en/ for Unicode references */
+}
+
+#spinitron-nowplaying .songpart {
+	font-style: italic;
+}
+
+#spinitron-nowplaying .labelpart,
+ #spinitron-nowplaying .datepart {
+	display: none;
+}
+
+#spinitron-nowplaying img {
+	margin: 0;
+	display: inline;
+	vertical-align: -3px;
+}
+
+#spinitron-nowplaying p {
+	padding: .5rem;
+}
+
+#spinitron-nowplaying p:nth-child(odd) {
+  background-color: rgba(45,52,67,.1);
+}
+
+/* Footer */
+footer {
+	margin: 3rem 0px 1rem;
+	line-height: 1.4em;
+	font-family: "Helvetica Neue","Helvetica",sans-serif;
+	font-weight: 300;
+	font-size: .8rem;
+	text-align: center;
+}
+
+/* Font Awesome Icons*/
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+/* /Font Awesome */
+
+footer ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 .5rem;
+}
+
+/*
+ * Grid
+ */
+
+.column {
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 48em) {
+	.column {
+		float: left;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.column.full {width: 100%;}
+
+	.column.half {width: 50%;}
+	
+	/* thirds */
+	.column.two-thirds {width: 66.66%;}
+	
+	.column.one-third {width: 33.33%;}
+	
+	/* fourths */
+	.column.three-fourths {width: 75%;}
+	
+	.column.one-fourth {width: 25%;}
+	
+	/* fifths */
+	.column.four-fifths {width: 80%;}
+	
+	.column.three-fifths {width: 60%;}
+	
+	.column.two-fifths {width: 40%;}
+	
+	.column.one-fifth {width: 20%;}
+}
+
+/*Grid Utilities */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix {*zoom: 1;}
+
+@media (min-width: 48em) {
+	.column.flow-opposite {float: right;}
+}
+
+.column.no-gutters {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.column.no-bottom-margin {margin-bottom: 0;}
+
+.centered {
+	float: none;
+	margin: 0 auto;
+}
