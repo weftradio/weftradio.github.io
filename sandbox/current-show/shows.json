@@ -1,0 +1,29 @@
+{
+
+}
+
+// what do we have?
+// Show (weekly regularity, time, title, airshifter, link)
+
+
+/*class = Show
+qualities of show
+  weekly regularlity
+  start time
+  end time
+  title
+  host
+  link
+  img
+
+see my question about this issue on Stack Overflow
+http://stackoverflow.com/questions/24998274/automatically-update-html-with-json-at-certain-times-of-day
+
+Also, see:
+
+http://www.tutorialscollection.com/how-to-use-jquery-getjson-method-for-ajax-to-get-json-data/
+http://api.jquery.com/jquery.getjson/
+http://json.org/
+
+
+*/

@@ -1,0 +1,110 @@
+---
+layout: sndbx-info-header-with-new-nav-bar
+title: info-header-with-new-nav-bar
+---
+
+<!--
+
+approach:
+
+- start with mobile first
+- two horizontal bars in the header (at full only?),
+  1. informative: [current show now playing, recent plays (1-2 entries), news items carousel, maybe a profile of the current show and airshifter, maybe a profile of a community partner(!)]
+  2. navigation menu to all site categories
+- also thinking about permanent sidebars, with possible content:
+  - events news as calendar
+  - events news as text
+  - community partner profiles
+  - twitter feed
+  - schedule info or link
+  - spinitron recent plays (5 entries)
+
+if the above header is true
+
+
+
+
+
+-->
+    <header>
+
+      <section id="current-stats">
+        <div class="row clearfix">
+
+          <div class="column no-gutters ten-percent">
+            <h1 class="hidden">WEFT Champaign, 90.1fm</h1>
+            <a href="#"><img class="logo" src="img/WEFT_ListenLocal_logo2_250.jpg" alt="weft logo"></a>
+          </div><!-- /.column one-fifth -->
+
+          <div class="column no-gutters ninety-percent">
+
+            <div class="row clearfix">
+
+              <div class="column one-third">
+                <div class="now-playing">
+                  <p class="now-playing_title">Now playing</p>
+                </div><!-- /.now-playing-->
+              </div>
+
+              <div class="column one-third">
+                <div id="spinitron-widget">
+                  <p class="spinitron-widget_title">Recent spins</p>
+                  <div data-station="weft" data-num="1" data-time="1" data-tweets="1" id="spinitron-nowplaying"></div>
+                </div><!-- /.spinitron-widget -->
+                <script src="//spinitron.com/js/npwidget.js"></script>
+              </div>
+
+              <div class="column one-third">
+                <p class="now-playing_title">News</p>
+                <div class="your-class">
+                  <div>your content</div>
+                  <div>your content</div>
+                  <div>your content</div>
+                </div>
+              </div>
+
+            </div><!-- /nested .row -->
+          </div><!-- /.column ninety-percent -->
+
+        </div><!-- /.row -->
+      </section>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="">About</a>
+            <ul>
+              <li><a href="">one</a></li>
+              <li><a href="">two</a></li>
+              <li><a href="">three</a></li>
+              <li><a href="">four</a></li>
+            </ul>
+          </li>
+          <li><a href="">Listen</a></li>
+          <li><a href="">Support</a>
+            <ul>
+              <li><a href="">one</a></li>
+              <li><a href="">two</a></li>
+              <li><a href="">three</a></li>
+              <li><a href="">four</a></li>
+            </ul>
+          </li>
+          <li><a href="">Schedule</a></li>
+          <li><a href="">Governance</a></li>
+          <li><a href="">Air shifter tools</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slick.js import, see https://kenwheeler.github.io/slick/ -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.your-class').slick({
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 3000
+          });
+      });
+    </script>

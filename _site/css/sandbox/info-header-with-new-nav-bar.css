@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/* Reset
+ ================================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+*,
+*:before,
+*:after {
+  -web-kit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+
+/* Scaffolding and type
+ ================================================== */
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 48em) {
+  html {
+  font-size: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.5 "Open Sans", sans-serif;
+  color: white;
+}
+
+
+/*
+ * Sections
+ */
+
+/* Header */
+
+header {
+}
+
+#current-stats {
+  color: black;
+}
+
+.logo {
+  margin-left: 0;
+  height: auto;
+  max-height: 4rem;
+  width: auto;
+  max-width: 100%;
+}
+@media (min-width: 48em) {
+  .logo {
+    width: 100%;
+  }
+}
+
+.now-playing {
+  
+}
+
+
+/* Spinitron widget */
+
+#spinitron-widget {
+  background-color: #eee;
+}
+.spinitron-widget_title {
+  text-align: center;
+}
+
+#spinitron-nowplaying {
+  font-size: .8rem;
+}
+
+#spinitron-nowplaying .spunpart {
+  display: none;
+}
+
+#spinitron-nowplaying .labelpart:before {
+  content: "on "
+}
+
+#spinitron-nowplaying .recentsong {
+  padding: .5rem;
+}
+
+#spinitron-nowplaying .songpart:before,
+#spinitron-nowplaying .songpart:after {
+  content: '"';
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #222;
+}
+
+ul.nav {
+  position: relative;
+  width: 100%;
+  height: 4.2rem;
+}
+
+ul.nav li {
+  display: inline-block;
+  width: 11rem;
+}
+
+ul.nav li:hover {
+    position: relative;
+}
+
+ul.nav a:link, ul.nav a:visited {
+    position: relative;
+    z-index: 999;
+    display: block;
+    width: 100%;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+ul.nav a:hover, ul.nav a:active {
+    background-color: #cc3c09;
+}
+ul.nav ul {
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 0.5rem rgba(34, 34, 34, 0.7);
+}
+ul.nav ul li {
+    display: block;
+}
+ul.nav ul li a {
+    position: relative;
+    z-index: 0;
+}
+ul.nav ul ul {
+    left: 100%;
+    top: 0;
+}
+ul.nav li:hover >ul {
+    visibility: visible;
+}
+
+
+/*
+ * Utilities
+ */
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+/*
+ * Grid instruction by Adam Kaplan, http://www.adamkaplan.me/grid
+ */
+
+.column {
+  margin-bottom: 2rem;
+}
+@media (min-width: 48em) {
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .column.full {width: 100%;}
+
+  .column.half {width: 50%;}
+  
+  /* thirds */
+  .column.two-thirds {width: 66.66%;}
+  
+  .column.one-third {width: 33.33%;}
+  
+  /* fourths */
+  .column.three-fourths {width: 75%;}
+  
+  .column.one-fourth {width: 25%;}
+  
+  /* fifths */
+  .column.four-fifths {width: 80%;}
+  
+  .column.three-fifths {width: 60%;}
+  
+  .column.two-fifths {width: 40%;}
+  
+  .column.one-fifth {width: 20%;}
+
+  /* Hacks for one-off layout needs */
+  .column.ten-percent {width: 10%;}
+
+  .column.ninety-percent {width: 90%;}
+
+  /* Remove nested column padding */
+  .column .row > .column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*
+ * Clearfix by Nicolas Gallagher, http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix {*zoom: 1;}
+
+/*
+ * Utilities
+ */
+
+@media (min-width: 48em) {
+  .column.flow-opposite {float: right;}
+}
+
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 48em) {
+  .column.no-gutters { /* So far this only applies to the header */
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
