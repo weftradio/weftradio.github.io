@@ -1,9 +1,0 @@
-# Site settings
-title: WEFTradio Prose sandbox
-email: bzelip@gmail.com
-description: "Sandbox space for experimenting with Prose.io and WEFT."
-url: "http://weftradio.github.io"
-github_username: brianzelip
-
-# Build settings
-markdown: kramdown
