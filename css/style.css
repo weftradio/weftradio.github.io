@@ -1357,6 +1357,7 @@ ul.support-gift-list {
 .support-gift-list li:last-child {
     margin-bottom: 0;
 }
+
 .center {
     text-align: center;
 }
@@ -1413,9 +1414,15 @@ ul.support-gift-list {
     height: 335px;
     border: 5px solid #08c;
 }
+.support-action-container-spring-2014 {
+    margin: 10px;
+    height: 550px;
+    border: 5px solid #08c;
+}
 
 @media (max-width: 767px) {
-    .support-action-container {
+    .support-action-container,
+    .support-action-container-spring-2014 {
         margin: 0;
         height: auto;
         border: none;

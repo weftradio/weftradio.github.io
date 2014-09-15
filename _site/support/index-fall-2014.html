@@ -118,7 +118,7 @@
       <p class="lead">We use PayPal to securely handle online transactions with your credit card, debit card, or PayPal account.</p>
       <div class="pure-g-r center">
         <div class="pure-u-8-24">
-          <div class="support-action-container">
+          <div class="support-action-container-spring-2014">
             <div class="support-action">
               <h3>$40</h3>
               <p>New/renew membership</p>
@@ -133,10 +133,10 @@
         </div>
       
         <div class="pure-u-8-24">
-          <div class="support-action-container">
+          <div class="support-action-container-spring-2014">
             <div class="support-action">
               <h3>$65</h3>
-              <p>Membership + a basic gift</p>
+              <p>Choose one basic gift</p>
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="U4DJGPFHB85K2">
                 <input type="hidden" name="on0" value="Gift 1">
@@ -166,17 +166,22 @@
         </div>
 
         <div class="pure-u-8-24">
-          <div class="support-action-container">
+          <div class="support-action-container-spring-2014">
             <div class="support-action">
               <h3>$90.10</h3>
-              <p>Chef Ra apron</p>
-              <p>OR</p>
-              <p>choose two basic gifts</p>
+              <p>Chef Ra apron OR choose two gifts</p>
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="G4TGD6TU3GNAN">
                 <input type="hidden" name="on0" value="Gift 1">
-                <div>Choose gift 1</div>
+                <div>Select Chef Ra apron</div>
                 <select name="os0">
+                  <option value="No gift">No gift</option>
+                  <option value="Chef Ra apron">Chef Ra apron</option>
+                </select>
+                <p><strong>OR</strong></p>
+                <input type="hidden" name="on1" value="Gift 2">
+                <div>Select gift 1</div>
+                <select name="os1">
                   <option value="No gift">No gift</option>
                   <option value="Ball Cap">Ball Cap</option>
                   <option value="Tote Bag">Tote Bag</option>
@@ -192,9 +197,9 @@
                   <option value="Tee (men's 3x)">Tee (men's 3x)</option>
                   <option value="Tee (men's 4x)">Tee (men's 4x)</option>
                 </select>
-                <input type="hidden" name="on1" value="Gift 2" />
-                <div>Choose gift 2</div>
-                <select name="os1">
+                <input type="hidden" name="on2" value="Gift 3">
+                <div>...Select gift 2</div>
+                <select name="os2">
                   <option value="No gift">No gift</option>
                   <option value="Ball Cap">Ball Cap</option>
                   <option value="Tote Bag">Tote Bag</option>
@@ -221,31 +226,20 @@
       
       <div class="pure-g-r center">
         <div class="pure-u-8-24">
-          <div class="support-action-container">
+          <div class="support-action-container-spring-2014">
             <div class="support-action">
               <h3>$120</h3>
+              <p>Chef Ra apron plus one gift OR choose three gifts</p>
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="4VKN6Q7VGSD5U">
                 <input type="hidden" name="on0" value="Gift 1">
-                <div>Choose gift 1</div>
+                <div>Choose Chef Ra apron</div>
                 <select name="os0">
                   <option value="No gift">No gift</option>
-                  <option value="Ball Cap">Ball Cap</option>
-                  <option value="Tote Bag">Tote Bag</option>
-                  <option value="Tee (women's s)">Tee (women's sm)</option>
-                  <option value="Tee (men's s)">Tee (men's sm)</option>
-                  <option value="Tee (women's md)">Tee (women's md)</option>
-                  <option value="Tee (men's md)">Tee (men's md)</option>
-                  <option value="Tee (women's lg)">Tee (women's lg)</option>
-                  <option value="Tee (men's lg)">Tee (men's lg)</option>
-                  <option value="Tee (women's xl)">Tee (women's xl)</option>
-                  <option value="Tee (men's xl)">Tee (men's xl)</option>
-                  <option value="Tee (men's 2x)">Tee (men's 2x)</option>
-                  <option value="Tee (men's 3x)">Tee (men's 3x)</option>
-                  <option value="Tee (men's 4x)">Tee (men's 4x)</option>
+                  <option value="Chef Ra apron">Chef Ra apron</option>
                 </select>
                 <input type="hidden" name="on1" value="Gift 2">
-                <div>Choose gift 2</div>
+                <div>...Plus select one gift</div>
                 <select name="os1">
                   <option value="No gift">No gift</option>
                   <option value="Ball Cap">Ball Cap</option>
@@ -263,8 +257,45 @@
                   <option value="Tee (men's 4x)">Tee (men's 4x)</option>
                 </select>
                 <input type="hidden" name="on2" value="Gift 3">
-                <div>Choose gift 3</div>
+                <p><strong>OR</strong></p>
+                <div>Select gift 1</div>
                 <select name="os2">
+                  <option value="No gift">No gift</option>
+                  <option value="Ball Cap">Ball Cap</option>
+                  <option value="Tote Bag">Tote Bag</option>
+                  <option value="Tee (women's s)">Tee (women's sm)</option>
+                  <option value="Tee (men's s)">Tee (men's sm)</option>
+                  <option value="Tee (women's md)">Tee (women's md)</option>
+                  <option value="Tee (men's md)">Tee (men's md)</option>
+                  <option value="Tee (women's lg)">Tee (women's lg)</option>
+                  <option value="Tee (men's lg)">Tee (men's lg)</option>
+                  <option value="Tee (women's xl)">Tee (women's xl)</option>
+                  <option value="Tee (men's xl)">Tee (men's xl)</option>
+                  <option value="Tee (men's 2x)">Tee (men's 2x)</option>
+                  <option value="Tee (men's 3x)">Tee (men's 3x)</option>
+                  <option value="Tee (men's 4x)">Tee (men's 4x)</option>
+                </select>
+                <input type="hidden" name="on3" value="Gift 4">
+                <div>...Select gift 2</div>
+                <select name="os3">
+                  <option value="No gift">No gift</option>
+                  <option value="Ball Cap">Ball Cap</option>
+                  <option value="Tote Bag">Tote Bag</option>
+                  <option value="Tee (women's s)">Tee (women's sm)</option>
+                  <option value="Tee (men's s)">Tee (men's sm)</option>
+                  <option value="Tee (women's md)">Tee (women's md)</option>
+                  <option value="Tee (men's md)">Tee (men's md)</option>
+                  <option value="Tee (women's lg)">Tee (women's lg)</option>
+                  <option value="Tee (men's lg)">Tee (men's lg)</option>
+                  <option value="Tee (women's xl)">Tee (women's xl)</option>
+                  <option value="Tee (men's xl)">Tee (men's xl)</option>
+                  <option value="Tee (men's 2x)">Tee (men's 2x)</option>
+                  <option value="Tee (men's 3x)">Tee (men's 3x)</option>
+                  <option value="Tee (men's 4x)">Tee (men's 4x)</option>
+                </select>
+                <input type="hidden" name="on4" value="Gift 5">
+                <div>...Select gift 3</div>
+                <select name="os4">
                   <option value="No gift">No gift</option>
                   <option value="Ball Cap">Ball Cap</option>
                   <option value="Tote Bag">Tote Bag</option>
@@ -289,14 +320,15 @@
         </div>
 
         <div class="pure-u-8-24">
-          <div class="support-action-container">
+          <div class="support-action-container-spring-2014">
             <div class="support-action">
               <h3>$150</h3>  
               <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="68H8XNHAEZ3KS">
                 <input type="hidden" name="on0" value="Size">
-                <div>Choose size</div>
+                <p>Long sleeve denim shirt with embroidered logo</p>
+                <div>Select size</div>
                 <select name="os0">
                   <option value="No gift">No gift</option>
                   <option value="WEFT Denim (s)">WEFT Denim (s)</option>
@@ -316,7 +348,7 @@
         </div>
 
         <div class="pure-u-8-24">
-          <div class="support-action-container">
+          <div class="support-action-container-spring-2014">
             <div class="support-action">
               <h3>Any other amount</h3>
               <p>For pledges $65 &amp; up, we'll contact you about premiums</p>
