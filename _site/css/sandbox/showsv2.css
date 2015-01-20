@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/* Bootstrap general style */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+
+.h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.h4 {
+  margin: 0;
+  padding: 0 0 .5rem 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.cal-wrapper {
+  min-height: 75vh;
+}
+
+
+.grid-cell {
+  flex: 1;
+}
+
+
+.cal-nav {
+  flex: 1 0px;
+}
+
+.cal-info {
+  flex: 3 0px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+
+
+/* Bootstrap tab nav */
+.bs-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-tabs {
+  border: none; 
+}
+
+.bs-nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav-tabs > li {
+  float: none;
+}
+
+.nav-tabs > li {
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+  border: none;
+}
+
+.nav-tabs > li.active {
+  border: none;
+}
+
+.nav-tabs > li.active > a {
+  border: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: none
+}
+
+
+
+/* Bootstrap tab conent */
+
+.tab-content>.active {
+  display: block;
+  visibility: visible;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+
+
+/* SolvedByFlexbox media object */
+.Media {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.Media:first-of-type {
+  padding-top: 0;
+}
+
+.Media:last-of-type {
+  border-bottom: none;
+}
+
+.Media-figure {
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.Media-text {
+  flex: 1;
+}
