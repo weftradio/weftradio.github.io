@@ -1,29 +1,12 @@
-@charset "UTF-8";
-
-/* Scaffolding and type
- ================================================== */
-html {
-  font-size: 16px;
-}
-
-@media (min-width: 720px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-body {
-  margin: 0;
-  font: 1rem/1.5 "Open Sans", sans-serif;
-  color: #333;
-}
-
-.container {
-  min-height: 75vh;
-  width: 60rem;
+.calendar-wrapper {
+  width: 100%;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
-header {
-  text-align: center;
+@media (min-width: 980px) {
+  .calendar-wrapper {
+    max-width: 980px;
+    padding: 0;
+  }
 }
