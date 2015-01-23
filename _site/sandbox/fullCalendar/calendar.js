@@ -6,7 +6,7 @@ var options = {
     header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'basicDay,agendaWeek,month'
+        right: 'agendaDay,agendaWeek,month'
     },
     eventBackgroundColor: 'transparent',
     eventBorderColor: '#08c',
@@ -30,7 +30,7 @@ function recreateFC(screenWidth) {
         options.header = {
             left: 'prev,next today',
             center: 'title',
-            right: 'basicDay,agendaWeek,month'
+            right: 'agendaDay,agendaWeek,month'
         },
         options.defaultView = 'agendaWeek';
     }
