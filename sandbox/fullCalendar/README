@@ -1,0 +1,28 @@
+README file for the weft.org/shows directory
+
+This file was created in Jan 2015 by Brian Zelip to document changes that happened to the WEFT shows page.
+
+Before this change we presented WEFT's schedule via an embedded google calendar iframe. In general embedding iframes is non-best practice.
+
+We were ok with this non-best practice until in January 2015 when a listener emailed in to the station manager pointing out that the shows page made her ios7 browsers crash (both phone and ipad).
+
+We looked into the matter and found some articles discussing why iframes provided problems to that earlier version of ios7.
+
+Instead of making the iframe work for the ios7 context, Brian took the chance to build an alternative solution to the iframe.
+
+This alternative implements an instance of the jquery plugin fullCalendar that allows us to dynamically feed the weft schedule google calendar to our site using only html/css/javascript.
+
+The dependencies involved in this solution are:
+1. fullCalendar.js, which depends on
+2. moment.js, and also
+3. jquery.js
+4. There is also a fullCalendar.css stylesheet
+5. The showsCalendar.js file that configures and initializes the fullCalendar instance that we want for our site.
+6. Three additional styles added to our main site's css file (/css/style.css). (This was true at the time of writing, the future WEFT may have added to/edited these three additional styles.)
+
+The locations for the resources outlined in points 1-4 above is a new directory that was added to the WEFT website directory structure for this project: /libs. The idea here is that this folder name is short for "libraries", which is to say, external code, or libraries, that others have written. The reason that all of these files weren't instead put into something like /js/vendors is because there was also css being used here, and I didn't want to take the time to pull that file out and make another directory called something like /css/vendors. Also, because the original libraries are all intact still, should those projects be upgraded in the future and WEFT would like to upgrade their versions, all future WEFT will have to do is replace the directories in /libs with the new versions.
+
+The main resources that Brian used to create this fullCalendar instance are:
+1. http://fullcalendar.io/docs/
+2. google developers account for the weft calendar holding account (weftwebteam@gmail.com) -- I had to create a public API browser key to get the public google calendar data using the google calendar data api v3 (see https://developers.google.com/google-apps/calendar/)
+3. This stack overflow post where someone helped me answer a problem I was facing: http://stackoverflow.com/questions/28111602/change-fullcalendar-view-and-header-options-based-on-viewport-width.
