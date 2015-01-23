@@ -6,7 +6,7 @@ var options = {
     header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'agendaDay,agendaWeek,month'
+        right: 'basicDay,agendaWeek,month'
     },
     eventBackgroundColor: 'transparent',
     eventBorderColor: '#08c',
@@ -25,12 +25,12 @@ function recreateFC(screenWidth) {
             center: 'title',
             right: ''
         },
-        options.defaultView = 'agendaDay';
+        options.defaultView = 'basicDay';
     } else {
         options.header = {
             left: 'prev,next today',
             center: 'title',
-            right: 'agendaDay,agendaWeek,month'
+            right: 'basicDay,agendaWeek,month'
         },
         options.defaultView = 'agendaWeek';
     }
