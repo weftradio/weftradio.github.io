@@ -1,0 +1,19 @@
+This file, directory, and project started on 2015-01-23.
+
+The idea is to create a new WEFT site general layout template toward the hand-off of when we move to Baltimore in May.
+
+A couple constraints of the project as I'm thinking:
+1. move away from the current site's use of Pure.css for layout and UI.
+2. easier and plainer markup and css - even if OOCSS
+3. documentation to later accompany it.
+4. in this early stage, leave room for building on to / off of the output - like make 1) a general layout with content that is all within a container, and 2) content based in a container with sidebars on left and right for different planed outreach campaigns, information outlets for WEFT.
+5. build on top of Basscss for faster design.
+  5a. I'm still weighing the merits of OOCSS for the organization - need to talk w/ Lorri to see if that style can work w/ her.
+
+
+
+Sites of reference that influence the build and design:
+- http://www.nypl.org/ -- especially the header above; this is an example of content wholly within a container as well as a container w/ sidebars.
+- http://webdesignerwall.com/demo/responsive-menu/ -- this tutorial on responsive nav menu
+- http://www.basscss.com/docs/layout/
+- 
