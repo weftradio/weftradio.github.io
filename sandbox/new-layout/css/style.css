@@ -45,23 +45,63 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  align-content: space-between;
 }
 
-.global-nav--root {
-  color: white;
-  text-align: center;
+.global-nav--item-wrapper,
+.global-nav--dropdown-item-wrapper {
   flex: 1 auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.global-nav--item,
+.global-nav--dropdown-item {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
-.global-nav--root:hover {
-  text-decoration: none;
+.global-nav--item:hover {
   background: white;
   color: #333;
+  text-decoration: none;
 }
 
+.global-nav--dropdown {
+  position: absolute;
+  top: -999em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.global-nav--item-wrapper:hover .global-nav--dropdown {
+  top: auto;
+  z-index: 9999;
+}
+
+.global-nav--dropdown-item {
+  background: #333;
+}
+
+.global-nav--dropdown-item:hover {
+  background: rgba(0,0,0,.1);
+  color: #333;
+  text-decoration: none;
+}
 
 
 .flex-space-around {

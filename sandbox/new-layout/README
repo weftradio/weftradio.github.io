@@ -14,6 +14,11 @@ A couple constraints of the project as I'm thinking:
 
 Sites of reference that influence the build and design:
 - http://www.nypl.org/ -- especially the header above; this is an example of content wholly within a container as well as a container w/ sidebars.
+
 - http://webdesignerwall.com/demo/responsive-menu/ -- this tutorial on responsive nav menu
+
 - http://www.basscss.com/docs/layout/
-- 
+
+- http://jsfiddle.net/KCk9y/3/light/ -- this was the reference that helped me achieve a flex-box based dropdown global nav system. After failing with multiple approaches (via my own thoughts and other web references), using these styles worked. My approach to use them was to first write style declarations that made use of css selectors (ie: `nav ul li:hover ul`), which I find visually easier to parse. Then once it was all working, I replaced the raw css selectors with single class names. The reason for not going forward w/ the css selectors route is to avoid issues of specificity. The css selectors route is tied to markup in general; whereas the single-class approach is tied only to a single-class.
+  * This resource also contains a contingency plan for browsers that don't support some flex-box declarations.
+-
